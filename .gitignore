@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+#Data Science & ML folders
+data-science/data/*
+!data-science/data/.gitkeep
+data-science/notebooks/.ipynb_checkpoints/
