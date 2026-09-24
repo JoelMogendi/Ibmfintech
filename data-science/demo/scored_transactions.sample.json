@@ -1,0 +1,28 @@
+[
+  {
+    "transaction_id": "TX0000001",
+    "account_id": "ACC00001",
+    "customer_id": "CUS00063",
+    "payment_date": "2025-01-20",
+    "amount_paid": 1761.23,
+    "channel": "mpesa",
+    "risk_score": 4.14,
+    "risk_level": "low",
+    "anomaly_type": "none",
+    "risk_reasons": ["No material rule-based risk indicator"],
+    "recommended_action": "allow"
+  },
+  {
+    "transaction_id": "TX0000002",
+    "account_id": "ACC00001",
+    "customer_id": "CUS00063",
+    "payment_date": "2025-03-05",
+    "amount_paid": 23293.09,
+    "channel": "mpesa",
+    "risk_score": 100.0,
+    "risk_level": "critical",
+    "anomaly_type": "payment_exceeds_principal",
+    "risk_reasons": ["Payment is 132.6% of original principal"],
+    "recommended_action": "hold_and_investigate"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Cognifi Repayment Risk Score",
+  "type": "object",
+  "required": ["transaction_id", "account_id", "customer_id", "payment_date", "amount_paid", "channel", "risk_score", "risk_level", "anomaly_type", "risk_reasons", "recommended_action"],
+  "properties": {
+    "transaction_id": {"type": "string"},
+    "account_id": {"type": "string"},
+    "customer_id": {"type": "string"},
+    "payment_date": {"type": "string", "format": "date"},
+    "amount_paid": {"type": "number", "minimum": 0},
+    "channel": {"enum": ["mpesa", "bank", "ussd"]},
+    "risk_score": {"type": "number", "minimum": 0, "maximum": 100},
+    "risk_level": {"enum": ["low", "medium", "high", "critical"]},
+    "anomaly_type": {"type": "string"},
+    "risk_reasons": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "recommended_action": {"enum": ["allow", "monitor_and_verify", "enhanced_due_diligence", "hold_and_investigate"]}
+  },
+  "additionalProperties": false
+}
