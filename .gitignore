@@ -44,3 +44,8 @@ next-env.d.ts
 data-science/data/*
 !data-science/data/.gitkeep
 data-science/notebooks/.ipynb_checkpoints/
+data-science/data/generated/
+data-science/**/*.joblib
+data-science/**/__pycache__/
+data-science/.pytest_cache/
+*.pyc
