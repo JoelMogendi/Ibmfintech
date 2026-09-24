@@ -1,0 +1,14 @@
+{
+  "transaction_id": "tx_8849201a",
+  "timestamp": "2026-09-24T11:15:00Z",
+  "user_id": "usr_7729X",
+  "amount": 4500.00,
+  "currency": "USD",
+  "location": "Nairobi, KE",
+  "security_analysis": {
+    "risk_score": 0.92,
+    "flagged_status": "CRITICAL_ANOMALY",
+    "anomaly_type": "rapid_successive_transfers",
+    "recommended_action": "block_and_verify"
+  }
+}
