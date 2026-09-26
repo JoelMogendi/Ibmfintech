@@ -11,7 +11,7 @@ export async function GET(req: Request) {
 
         // attempt to load full pipeline output
         const primaryPath = path.join(process.cwd(), 'data-science', 'data', 'generated', 'scored_transaction.json');
-        const samplePath = path.join(process.cwd(), 'ibm-case-study-reference', 'scored_transactions.sample.json');
+        const samplePath = path.join(process.cwd(), 'data-science', 'demo', 'scored_transactions.sample.json');
 
         const filePath = fs.existsSync(primaryPath) ? primaryPath : samplePath;
 
